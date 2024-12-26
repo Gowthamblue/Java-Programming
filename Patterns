@@ -39,10 +39,6 @@ public class patterns {
             {
                 System.out.print("*");
             }
-            for(int j=i-1;j>=1;j--)
-            {
-                System.out.print("*");
-            }
             System.out.println();
         }
     }
