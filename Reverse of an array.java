@@ -16,7 +16,8 @@ public class Reverseofanarray {
         {
             System.out.print(arr[i]+" ");
         }
-        System.out.print("The Reversed array is:");
+        System.out.println();
+        System.out.print("The Reversed array is: ");
         for(int i=n-1;i>=0;i--)
         {
             System.out.print(arr[i]+" ");
