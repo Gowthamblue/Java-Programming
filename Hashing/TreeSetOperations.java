@@ -18,6 +18,37 @@ public class HashTree {
         System.out.println("TailSet(greater than or equal 15): "+treeset.tailSet(15));
         System.out.println("SubSet : "+treeset.subSet(10,30));
 
+        
+        System.out.println("PollFirst (removes first): "+treeset.pollFirst());
+        System.out.println("Treeset after pollFirst: "+treeset);
+        System.out.println("PollLast (removes last): "+treeset.pollLast());
+        System.out.println("Treeset after lastFirst: "+treeset);
+
+        // General Methods
+        System.out.println("The size of the Tree "+treeset.size());
+        System.out.println("Is the Set contains: "+(treeset.contains(45)));
+        System.out.println("Is the Tree is Empty "+(treeset.isEmpty()));
+
+        // Add all elements from another collection
+        List<Integer> additionalElements = Arrays.asList(25, 35, 40);
+        treeset.addAll(Arrays.asList(24,25,28));
+        System.out.println("TreeSet after adding collection: " + treeset); // Output: [10, 15, 20, 25, 35, 40]
+
+        // Iteration
+        System.out.println("Iterating over TreeSet:");
+        for (Integer element : treeset) {
+            System.out.print(element + " "); // Output: 10 15 20 25 35 40
+        }
+        System.out.println();
+
+        // Convert to Array
+        Object[] array = treeset.toArray();
+        System.out.println("Array from TreeSet: " + Arrays.toString(array)); // Output: [10, 15, 20, 25, 35, 40]
+
+        // Clear TreeSet
+        treeset.clear();
+        System.out.println("TreeSet after clearing: " + treeset); // Output: []
+
 
 
 
