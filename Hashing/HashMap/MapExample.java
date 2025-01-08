@@ -38,6 +38,11 @@ public class MapExample {
         {
             System.out.println(m.getKey()+" : "+m.getValue());
         }
+        List<Map.Entry<String,Integer>> lis = new ArrayList<>(playerScore.entrySet());
+        System.out.println("Entries List: " + lis);
+        List<Map.Entry<String,Integer>> li = new ArrayList<>(entries);
+        System.out.println("The set "+li);
+
 
 
     }
