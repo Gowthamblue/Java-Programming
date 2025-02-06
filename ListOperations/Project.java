@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 public class Project{
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
